@@ -7,7 +7,7 @@
   <meta name="description" content="Rodrigo Cerejo, estudante de Engenharia Informática na Universidade de Aveiro, à procura do primeiro estágio em desenvolvimento de software.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Math&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Math&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
   <script src="site.js" defer></script>
 </head>
@@ -63,42 +63,19 @@
   <!-- ============ CIRCUITO ============ -->
   <section>
     <h2 data-t="hDone">O que já fiz</h2>
-    <p class="hint" data-t="hint">Cada fio é uma competência; cada porta, onde a usei. Toca numa porta.</p>
+    <p class="hint" data-t="hint">Cada linha é uma competência; cada porta, a cadeira onde a desenvolvi. Toca numa porta.</p>
 
-    <div class="circuit" id="circuit">
-      <span class="th c1"><small>2024/25</small><b data-t="t0">12.º ano</b></span>
-      <span class="th c2"><small>2025/26</small><b data-t="t1">1.º sem.</b></span>
-      <span class="th c3"><small>2025/26</small><b data-t="t2">2.º sem.</b></span>
-      <span class="th c4"><small>2026/27</small><b data-t="t3">agora</b></span>
-      <span class="th c5 next"><b data-t="t4">estágio</b></span>
+    <p class="swipe" data-t="swipe">desliza para o lado →</p>
+    <div class="scroll"><div class="oldc" id="circuit"></div></div>
+    <noscript><p class="hint">Esta parte precisa de JavaScript. O CV completo está no PDF.</p></noscript>
 
-      <b class="wl r1">Python</b><b class="wl r2">Java</b><b class="wl r3">C</b><b class="wl r4">SQL</b>
-      <b class="wl r5">TypeScript</b><b class="wl r6">Git</b><b class="wl r7">Bash</b><b class="wl r8">Luau</b>
-
-      <i class="wire r1"></i><i class="wire r2"></i><i class="wire r3"></i><i class="wire r4"></i>
-      <i class="wire r5"></i><i class="wire r6"></i><i class="wire r7"></i><i class="wire r8"></i>
-
-      <button type="button" class="gate r1 c1" data-id="qxq">QxQ</button>
-      <button type="button" class="gate r1 c2" data-id="fp">FP</button>
-      <button type="button" class="gate r1 c3" data-id="msf">MSF</button>
-      <button type="button" class="gate r2 c3" data-id="poo">POO</button>
-      <button type="button" class="gate now r2 c4" data-id="pds">PDS</button>
-      <button type="button" class="gate now r3 c4" data-id="aed">AED</button>
-      <button type="button" class="gate proj now r4 c4" data-id="oficina" data-t="gOficina">Oficina</button>
-      <button type="button" class="gate span2 r5 c2" data-id="iei">IEI</button>
-      <button type="button" class="gate proj span2 r5 c3" data-id="loop">Loop</button>
-      <button type="button" class="gate proj span2 r6 c4" data-id="vp">vp</button>
-      <button type="button" class="gate proj r8 c4" data-id="sim" data-t="gSim">Simulador</button>
-
-      <span class="meas" aria-hidden="true"></span>
-    </div>
-
-    <ul class="legend">
-      <li><i class="sw"></i><span data-t="lgCourse">cadeira</span></li>
-      <li><i class="sw proj"></i><span data-t="lgProj">projeto</span></li>
-      <li><i class="sw now"></i><span data-t="lgNow">a decorrer</span></li>
-      <li class="lg-meas"><i class="sw meas"></i><span data-t="lgMeas">medição por fazer: estágio</span></li>
-    </ul>
+    <p class="projs">
+      <span data-t="projs">Projetos:</span>
+      <button type="button" data-id="vp">vp</button>
+      <button type="button" data-id="loop">Loop</button>
+      <button type="button" data-id="oficina" data-t="gOficina">Oficina</button>
+      <button type="button" data-id="sim" data-t="gSim">Simulador</button>
+    </p>
 
     <article class="detail" id="detail" aria-live="polite">
       <h3 id="dTitle"></h3>
