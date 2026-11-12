@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodrigo Cerejo — CV interativo</title>
+  <meta name="description" content="Rodrigo Cerejo, estudante de Engenharia Informática na Universidade de Aveiro, à procura do primeiro estágio em desenvolvimento de software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Math&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <span class="top-tag">CV · 2026/27</span>
+  <nav>
+    <button type="button" id="lang" aria-label="Switch to English">EN</button>
+    <a id="pdf" href="CV_Rodrigo_Cerejo_PT.pdf" data-t="pdf">CV completo (PDF)</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ QUEM SOU + MEDIÇÃO ============ -->
+  <section class="hero">
+    <h1 class="ket"><span class="bar" aria-hidden="true">|</span>Rodrigo <em>Cerejo</em><span class="ang" aria-hidden="true">⟩</span></h1>
+    <p class="superpos" id="superpos">= <i>α</i>|<span data-t="ketA">estudante</span>⟩ + <i>β</i>|<span data-t="ketB">programador</span>⟩</p>
+
+    <p class="lead" data-t="lead">Estudante de Engenharia Informática na Universidade de Aveiro, no 2.º ano. <b>Procuro o primeiro estágio em desenvolvimento de software.</b></p>
+
+    <div class="lab">
+      <svg class="bloch" viewBox="0 0 120 140" role="img" aria-labelledby="blochTitle">
+        <title id="blochTitle" data-t="blochAlt">Esfera de Bloch com o estado entre estudante e programador</title>
+        <text class="lbl" id="north" x="60" y="10" text-anchor="middle">|<tspan data-t="ketA">estudante</tspan>⟩</text>
+        <text class="lbl" id="south" x="60" y="136" text-anchor="middle">|<tspan data-t="ketB">programador</tspan>⟩</text>
+        <path class="back" d="M20 70 A40 11 0 0 1 100 70"/>
+        <line class="axis" x1="60" y1="20" x2="60" y2="120"/>
+        <circle class="outline" cx="60" cy="70" r="40"/>
+        <path class="front" d="M100 70 A40 11 0 0 1 20 70"/>
+        <circle class="pole" cx="60" cy="30" r="1.5"/>
+        <circle class="pole" cx="60" cy="110" r="1.5"/>
+        <g class="state" id="state"><line x1="60" y1="70" x2="60" y2="110"/><circle cx="60" cy="110" r="3"/></g>
+      </svg>
+
+      <div class="panel">
+        <div class="btns">
+          <button type="button" class="go" id="measure" data-t="measure">Medir |ψ⟩</button>
+          <button type="button" id="shots" data-t="shots">× 100</button>
+          <button type="button" id="reset" data-t="reset">Repor</button>
+        </div>
+        <p class="outcome" id="outcome" aria-live="polite" data-t="idle">Ainda ninguém mediu. Carrega em «Medir».</p>
+        <div class="hist" aria-hidden="true">
+          <div class="h-row"><span class="h-name">|<span data-t="ketB">programador</span>⟩</span><span class="h-bar"><i id="bar1"></i></span><span class="h-n" id="n1">0</span></div>
+          <div class="h-row"><span class="h-name">|<span data-t="ketA">estudante</span>⟩</span><span class="h-bar"><i id="bar0"></i></span><span class="h-n" id="n0">0</span></div>
+        </div>
+        <p class="fine" data-t="fine">Simulação de um qubit: P(programador) = sin²(θ/2) ≈ 73 %, com θ = 118°. A medição que conta é um estágio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CIRCUITO ============ -->
+  <section>
+    <h2 data-t="hDone">O que já fiz</h2>
+    <p class="hint" data-t="hint">Cada fio é uma competência; cada porta, onde a usei. Toca numa porta.</p>
+
+    <div class="circuit" id="circuit">
+      <span class="th c1"><small>2024/25</small><b data-t="t0">12.º ano</b></span>
+      <span class="th c2"><small>2025/26</small><b data-t="t1">1.º sem.</b></span>
+      <span class="th c3"><small>2025/26</small><b data-t="t2">2.º sem.</b></span>
+      <span class="th c4"><small>2026/27</small><b data-t="t3">agora</b></span>
+      <span class="th c5 next"><b data-t="t4">estágio</b></span>
+
+      <b class="wl r1">Python</b><b class="wl r2">Java</b><b class="wl r3">C</b><b class="wl r4">SQL</b>
+      <b class="wl r5">TypeScript</b><b class="wl r6">Git</b><b class="wl r7">Bash</b><b class="wl r8">Luau</b>
+
+      <i class="wire r1"></i><i class="wire r2"></i><i class="wire r3"></i><i class="wire r4"></i>
+      <i class="wire r5"></i><i class="wire r6"></i><i class="wire r7"></i><i class="wire r8"></i>
+
+      <button type="button" class="gate r1 c1" data-id="qxq">QxQ</button>
+      <button type="button" class="gate r1 c2" data-id="fp">FP</button>
+      <button type="button" class="gate r1 c3" data-id="msf">MSF</button>
+      <button type="button" class="gate r2 c3" data-id="poo">POO</button>
+      <button type="button" class="gate now r2 c4" data-id="pds">PDS</button>
+      <button type="button" class="gate now r3 c4" data-id="aed">AED</button>
+      <button type="button" class="gate proj now r4 c4" data-id="oficina" data-t="gOficina">Oficina</button>
+      <button type="button" class="gate span2 r5 c2" data-id="iei">IEI</button>
+      <button type="button" class="gate proj span2 r5 c3" data-id="loop">Loop</button>
+      <button type="button" class="gate proj span2 r6 c4" data-id="vp">vp</button>
+      <button type="button" class="gate proj r8 c4" data-id="sim" data-t="gSim">Simulador</button>
+
+      <span class="meas" aria-hidden="true"></span>
+    </div>
+
+    <ul class="legend">
+      <li><i class="sw"></i><span data-t="lgCourse">cadeira</span></li>
+      <li><i class="sw proj"></i><span data-t="lgProj">projeto</span></li>
+      <li><i class="sw now"></i><span data-t="lgNow">a decorrer</span></li>
+      <li class="lg-meas"><i class="sw meas"></i><span data-t="lgMeas">medição por fazer: estágio</span></li>
+    </ul>
+
+    <article class="detail" id="detail" aria-live="polite">
+      <h3 id="dTitle"></h3>
+      <p class="d-meta" id="dMeta"></p>
+      <p class="d-text" id="dText"></p>
+      <p class="d-proof" id="dProof"></p>
+    </article>
+  </section>
+
+  <!-- ============ NÚMEROS ============ -->
+  <section class="facts">
+    <div><p class="num"><span class="m">⟨</span><em data-t="gradeVar">nota</em><span class="m">⟩</span> = <span data-t="gradeVal">15,5</span><small>/20</small></p><p data-t="f1">média ponderada do 1.º ano</p></div>
+    <div><p class="num">60<small>/60 ECTS</small></p><p data-t="f2">1.º ano completo, sem cadeiras em atraso</p></div>
+    <div><p class="num">99<small> %</small></p><p data-t="f3">nota final em 100 horas de computação quântica</p></div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="contact">
+    <h2 data-t="hContact">Falta a medição</h2>
+    <p data-t="contactP">O primeiro estágio é a medição que falta. Se tiverem um lugar para um estagiário, falem comigo.</p>
+    <div class="links">
+      <a class="go" href="mailto:cerejo@ua.pt">cerejo@ua.pt</a>
+      <a href="https://github.com/cerejo2">github.com/cerejo2</a>
+      <a href="CV_Rodrigo_Cerejo_PT.pdf" data-t="pdfPT">CV em PDF</a>
+      <a href="CV_Rodrigo_Cerejo_EN.pdf" data-t="pdfEN">Resume in English (PDF)</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p><span data-t="foot">HTML, CSS e JavaScript, sem frameworks. Código em</span> <a href="https://github.com/cerejo2/cv">github.com/cerejo2/cv</a></p>
+</footer>
+
+</body>
+</html>

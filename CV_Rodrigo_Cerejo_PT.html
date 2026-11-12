@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodrigo Cerejo — CV</title>
+  <meta name="description" content="CV de Rodrigo Cerejo, estudante de Engenharia Informática na Universidade de Aveiro, à procura do primeiro estágio em desenvolvimento de software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Math&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cv.css">
+  <script src="cv.js" defer></script>
+</head>
+<body data-measure="Medir |ψ⟩" data-reset="Repor a superposição">
+
+<!-- barra só do ecrã: não aparece no PDF -->
+<nav class="bar" aria-label="Versão interativa">
+  <span class="hint">CV interativo · passa o rato pelas portas do circuito</span>
+  <button class="go" type="button" id="measure">Medir |ψ⟩</button>
+  <a href="CV_Rodrigo_Cerejo_EN.html" lang="en">English</a>
+  <a href="CV_Rodrigo_Cerejo_PT.pdf">PDF</a>
+</nav>
+
+<main class="page">
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="hero">
+    <div>
+      <h1 class="ket">
+        <span class="ket-bar" aria-hidden="true"></span>
+        <span class="ket-text">Rodrigo <em>Cerejo</em></span>
+        <span class="ket-angle" aria-hidden="true"><svg viewBox="0 0 10 100" preserveAspectRatio="none"><polyline points="0.4,0.4 9.6,50 0.4,99.6"/></svg></span>
+      </h1>
+      <p class="superpos">
+        <span class="before"><span class="eq">=</span> <i>α</i>|estudante⟩ <span class="eq">+</span> <i>β</i>|programador⟩</span>
+        <span class="after"><span class="eq">→</span> |programador⟩ &nbsp;<span class="eq">(medido)</span></span>
+      </p>
+
+      <p class="role">Estudante de Engenharia Informática <span>· 2.º ano · Universidade de Aveiro</span></p>
+      <p class="cta">Procuro o primeiro estágio em desenvolvimento de software</p>
+
+    </div>
+
+    <div class="hero-side">
+      <!-- esfera de Bloch: o estado está na superfície, entre os dois polos da base -->
+      <figure class="bloch" id="bloch">
+        <svg viewBox="0 0 120 140" role="img" aria-label="Esfera de Bloch: o estado |ψ⟩ está entre |estudante⟩ e |programador⟩, mais perto de |programador⟩">
+          <text class="lbl" x="60" y="10" text-anchor="middle">|estudante⟩</text>
+          <text class="lbl south" x="60" y="136" text-anchor="middle">|programador⟩</text>
+          <path class="back" d="M20 70 A40 11 0 0 1 100 70"/>
+          <line class="axis" x1="60" y1="20" x2="60" y2="120"/>
+          <circle class="outline" cx="60" cy="70" r="40"/>
+          <path class="front" d="M100 70 A40 11 0 0 1 20 70"/>
+          <circle class="pole" cx="60" cy="30" r="1.5"/>
+          <circle class="pole" cx="60" cy="110" r="1.5"/>
+          <path class="arc" d="M60 59 A11 11 0 0 1 68 77.5"/>
+          <text class="lbl-th" x="71" y="64">θ</text>
+          <g class="state"><line x1="60" y1="70" x2="60" y2="110"/><circle cx="60" cy="110" r="2.8"/></g>
+          <text class="lbl-psi" x="92.5" y="105">|ψ⟩</text>
+        </svg>
+      </figure>
+
+      <figure class="portrait">
+        <svg viewBox="0 0 184 184" role="img" aria-label="Fotografia de Rodrigo Cerejo">
+          <defs><clipPath id="face"><circle cx="92" cy="92" r="91"/></clipPath></defs>
+          <circle cx="92" cy="92" r="91" fill="#d9d6d0"/>
+          <image href="Foto_retrato.jpeg" x="-32.9" y="-128.2" width="250.9" height="446.1" clip-path="url(#face)"/>
+          <circle cx="92" cy="92" r="91" fill="none" stroke="#141418" stroke-width="1.4"/>
+        </svg>
+      </figure>
+    </div>
+  </header>
+
+  <ul class="contacts">
+    <li>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="M3.8 6.6 12 13l8.2-6.4"/></svg>
+      <a href="mailto:cerejo@ua.pt">cerejo@ua.pt</a>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5 4.5 12 9 16.5M15 7.5l4.5 4.5-4.5 4.5"/></svg>
+      <a href="https://github.com/cerejo2">github.com/cerejo2</a>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.2s-6.6-6.1-6.6-11.3a6.6 6.6 0 0 1 13.2 0c0 5.2-6.6 11.3-6.6 11.3z"/><circle cx="12" cy="9.9" r="2.4"/></svg>
+      Aveiro, Portugal
+    </li>
+  </ul>
+
+  <!-- ============ FACTOS ============ -->
+  <section class="facts" aria-label="Resultados">
+    <div class="fact">
+      <p class="num"><span class="m">⟨</span><span class="var">nota</span><span class="m">⟩</span> = 15,5<small>/20</small></p>
+      <p class="lab"><b>média ponderada</b><br>do 1.º ano</p>
+    </div>
+    <div class="fact">
+      <p class="num">60<small>/60 ECTS</small></p>
+      <p class="lab"><b>1.º ano completo</b>,<br>sem cadeiras em atraso</p>
+    </div>
+    <div class="fact">
+      <p class="num">99<small>&thinsp;%</small></p>
+      <p class="lab"><b>nota final</b> num curso de 100 horas de<br>computação quântica, feito no 12.º ano</p>
+    </div>
+  </section>
+
+  <!-- ============ COMPETÊNCIAS (circuito) ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Competências</h2>
+      <span class="rule"></span>
+      <span class="note">cada fio é uma competência · cada porta, onde a usei</span>
+    </div>
+
+    <div class="scroll">
+    <div class="circuit">
+      <div class="th axis">competência ↓ &nbsp;tempo →</div>
+      <div class="th t0">2024/25<b>12.º ano</b></div>
+      <div class="th t1">2025/26<b>1.º semestre</b></div>
+      <div class="th t2">2025/26<b>2.º semestre</b></div>
+      <div class="th t3">2026/27 · a decorrer<b>3.º semestre</b></div>
+      <div class="th next">a seguir<b>estágio</b></div>
+
+      <div class="wl r1"><b>Python</b><span>Cirq · NumPy · Matplotlib</span></div>
+      <div class="wl r2"><b>Java</b><span>POO · padrões de desenho</span></div>
+      <div class="wl r3"><b>C</b><span>TAD · memória dinâmica</span></div>
+      <div class="wl r4"><b>SQL</b><span>SQL Server · modelo ER</span></div>
+      <div class="wl r5"><b>TypeScript</b><span>React · Vite · HTML · CSS</span></div>
+      <div class="wl r6"><b>Git</b><span>branches · pull requests</span></div>
+      <div class="wl r7"><b>Bash</b><span>Linux · testes automáticos</span></div>
+      <div class="wl r8"><b>Luau</b><span>Roblox Studio · projeto pessoal</span></div>
+
+      <span class="k0 r1" aria-hidden="true">|0⟩</span><span class="k0 r2" aria-hidden="true">|0⟩</span>
+      <span class="k0 r3" aria-hidden="true">|0⟩</span><span class="k0 r4" aria-hidden="true">|0⟩</span>
+      <span class="k0 r5" aria-hidden="true">|0⟩</span><span class="k0 r6" aria-hidden="true">|0⟩</span>
+      <span class="k0 r7" aria-hidden="true">|0⟩</span><span class="k0 r8" aria-hidden="true">|0⟩</span>
+
+      <i class="wire r1"></i><i class="wire r2"></i><i class="wire r3"></i><i class="wire r4"></i>
+      <i class="wire r5"></i><i class="wire r6"></i><i class="wire r7"></i><i class="wire r8"></i>
+
+      <!-- portas: cadeiras (contorno, com a nota) e projetos (cheias) -->
+      <span class="gate r1 t0" tabindex="0" data-tip="Qubit by Qubit · 99 %|Introduction to Quantum Computing: 100 horas no 12.º ano, com laboratórios semanais em Cirq no Google Colab.">QxQ <i>99&thinsp;%</i></span>
+      <span class="gate r1 t1" tabindex="0" data-tip="Fundamentos de Programação · 15|Python de raiz: funções, listas, dicionários e ficheiros.">FP <i>15</i></span>
+      <span class="gate r1 t2" tabindex="0" data-tip="Modelação de Sistemas Físicos · 16|Simulação numérica em Python, com NumPy e Matplotlib.">MSF <i>16</i></span>
+      <span class="gate r2 t2" tabindex="0" data-tip="Programação Orientada a Objetos · 16|Java: classes, herança, interfaces e leitura de ficheiros.">POO <i>16</i></span>
+      <span class="gate now r2 t3" tabindex="0" data-tip="Padrões e Desenho de Software · a decorrer|Nove guiões em Java, em par: Builder, Prototype, Adapter e Decorator.">PDS</span>
+      <span class="gate now r3 t3" tabindex="0" data-tip="Algoritmos e Estruturas de Dados · a decorrer|Gerador de cenas 2D em C: TAD, arrays dinâmicos, insertion sort contra merge sort, valgrind. Entrega a 20 de novembro.">AED</span>
+      <a class="gate proj now r4 t3" href="#p-oficina" data-card="p-oficina" data-tip="Oficina · a decorrer|Base de dados de uma oficina automóvel em SQL Server, com 13 tabelas. Clica para ver o projeto.">Oficina</a>
+      <span class="gate span2 r5 t1" tabindex="0" data-tip="Introdução à Engenharia Informática · 16|Primeiros passos com Git e GitHub e uma página em HTML e CSS.">IEI <i>16</i></span>
+      <a class="gate proj span2 r5 t2" href="#p-loop" data-card="p-loop" data-tip="Loop · entregue|Loja online de eletrónica recondicionada em React e TypeScript. Clica para ver o projeto.">Loop</a>
+      <a class="gate proj span2 r6 t3" href="#p-vp" data-card="p-vp" data-tip="vp · entregue|Monitor de integridade de ficheiros em Bash, com 48 testes automáticos. Clica para ver o projeto.">vp</a>
+      <a class="gate proj r8 t3" href="#p-sim" data-card="p-sim" data-tip="Simulador · projeto pessoal|Simulador 3D de penetração de blindagem em Roblox. Clica para ver o projeto.">Simulador</a>
+
+      <!-- medição: ainda por fazer -->
+      <div class="meas" id="meas" role="img" aria-label="Medição ainda por fazer: o primeiro estágio">
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+        <svg viewBox="0 0 24 18"><path d="M3 15 A9 9 0 0 1 21 15"/><line x1="12" y1="15" x2="18.5" y2="5"/></svg>
+      </div>
+      <i class="cw r1"></i><i class="cw r2"></i><i class="cw r3"></i><i class="cw r4"></i>
+      <i class="cw r5"></i><i class="cw r6"></i><i class="cw r7"></i><i class="cw r8"></i>
+    </div>
+    </div>
+
+    <div class="legend">
+      <span><i class="sw"></i>cadeira concluída, com a nota (0–20)</span>
+      <span><i class="sw proj"></i>projeto, descrito abaixo</span>
+      <span><i class="sw now"></i>a decorrer</span>
+      <span class="abbr"><b>FP</b> Fundamentos de Programação · <b>IEI</b> Introdução à Engenharia Informática · <b>MSF</b> Modelação de Sistemas Físicos · <b>POO</b> Programação Orientada a Objetos</span>
+    </div>
+  </section>
+
+  <!-- ============ PROJETOS ============ -->
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Projetos</h2>
+      <span class="rule"></span>
+      <span class="note">o que construí · a minha parte · como verificar</span>
+    </div>
+
+    <div class="cards">
+      <article class="card" id="p-vp">
+        <div class="card-top"><span class="chip">vp</span><h3>Monitor de integridade de ficheiros</h3></div>
+        <p class="stack">Bash · Linux · Git <span>— Sistemas Operativos · par · nov 2026</span></p>
+        <p class="txt">Comando que guarda o SHA-256 e os metadados de cada ficheiro e deteta o que foi criado, apagado ou alterado. <b>A minha parte:</b> a recolha de dados, o modo de proteção e os 48 testes automáticos, todos a passar em Ubuntu.</p>
+        <p class="proof">prova: código e relatório a pedido · <b>uso de IA declarado</b></p>
+      </article>
+
+      <article class="card" id="p-loop">
+        <div class="card-top"><span class="chip">Loop</span><h3>Loja online de eletrónica recondicionada</h3></div>
+        <p class="stack">TypeScript · React · Vite <span>— equipa de 4 · mai 2026</span></p>
+        <p class="txt">Projeto de Modelação e Análise de Sistemas, com catálogo, carrinho, carteira e retomas, gerido com <i>pull requests</i>. <b>A minha parte:</b> o serviço central de persistência (353 linhas de TypeScript) e a correção do <i>routing</i> no <i>deploy</i>.</p>
+        <p class="proof">prova: <a href="https://github.com/cerejo2/MAS-Project">github.com/cerejo2/MAS-Project</a></p>
+      </article>
+
+      <article class="card" id="p-oficina">
+        <div class="card-top"><span class="chip now">Oficina</span><h3>Base de dados de uma oficina automóvel</h3></div>
+        <p class="stack">SQL Server · T-SQL · draw.io <span>— par · a decorrer</span></p>
+        <p class="txt">Projeto de Fundamentos de Bases de Dados: do DER ao DDL, em 13 tabelas. <b>Decisões:</b> o histórico pertence à viatura e não ao dono; a fatura copia os preços e o IVA para nunca mudar. <b>Falta:</b> <i>triggers</i> e <i>stored procedures</i>.</p>
+        <p class="proof">prova: DER, esquema relacional e SQL a pedido</p>
+      </article>
+
+      <article class="card" id="p-sim">
+        <div class="card-top"><span class="chip">Simulador</span><h3>Simulador 3D de penetração de blindagem</h3></div>
+        <p class="stack">Luau · Roblox Studio · Python <span>— pessoal · alfa · out 2026</span></p>
+        <p class="txt">Um projétil perfura até quatro placas, com balística por <i>raycast</i> (espessura efetiva = espessura ÷ cos θ). <b>Como trabalho:</b> defino os requisitos e testo; o código é escrito com Claude Code. Cada sessão acaba em algo jogável.</p>
+        <p class="proof">prova: demonstração a pedido · <b>código assistido por IA</b></p>
+      </article>
+    </div>
+
+    <p class="also"><span class="tag">também a decorrer</span><b>AED</b>: gerador de cenas 2D em C (TAD, arrays dinâmicos, insertion sort contra merge sort, valgrind), entrega a 20 de novembro. <b>PDS</b>: nove guiões de padrões de desenho em Java, em par (Builder, Prototype, Adapter, Decorator).</p>
+  </section>
+
+  <!-- ============ FORMAÇÃO · LÍNGUAS · FERRAMENTAS ============ -->
+  <div class="bottom sec">
+    <section>
+      <div class="sec-head">
+        <h2>Formação</h2>
+        <span class="rule"></span>
+      </div>
+      <ol class="edu">
+        <li>
+          <span class="when">2025 – hoje</span>
+          <div>
+            <h3>Licenciatura em Engenharia Informática <span>· Universidade de Aveiro, DETI</span></h3>
+            <p>2.º ano. Notas mais altas: Arquitetura de Computadores (assembly MIPS) <b>17</b> · Álgebra Linear e Geometria Analítica <b>17</b> · POO, MSF, IEI e Cálculo I <b>16</b>.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2024 – 2025</span>
+          <div>
+            <h3>Introduction to Quantum Computing <span>· Qubit by Qubit, The Coding School</span></h3>
+            <p>100 horas em inglês, por iniciativa própria, no 12.º ano. Circuitos em Cirq (Python): portas, entrelaçamento, algoritmos e distribuição quântica de chaves.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2022 – 2025</span>
+          <div>
+            <h3>Ensino Secundário <span>· Ciências e Tecnologias</span></h3>
+            <p>Escola Básica e Secundária da Batalha</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <div class="sec-head">
+        <h2>Línguas</h2>
+        <span class="rule"></span>
+      </div>
+      <p class="kv"><b>Português</b> · nativo</p>
+      <p class="kv"><b>Inglês</b> · B2 <span class="sub">(autoavaliação; fiz um curso de 100 horas em inglês)</span></p>
+
+      <div class="sec-head gap">
+        <h2>Ferramentas</h2>
+        <span class="rule"></span>
+      </div>
+      <p class="kv">Git · GitHub · Linux · VS Code · Makefile · LaTeX · Markdown · draw.io · Inkscape · Google Colab · Claude Code</p>
+    </section>
+  </div>
+
+  <!-- ============ FECHO ============ -->
+  <footer class="close">
+    <p class="eqn"><span class="m">⟨</span>programador<span class="m">|</span>Rodrigo Cerejo<span class="m">⟩</span> = <i>β</i></p>
+    <p class="say"><b>A amplitude já cá está.</b><br>Falta a medição: o meu primeiro estágio.</p>
+    <div class="web">
+      <p>versão interativa<br><b>cerejo2.github.io/cv</b></p>
+      <svg class="qr" viewBox="-1 -1 31 31" role="img" aria-label="QR: https://cerejo2.github.io/cv/"><path d="M0 0h7v1h-7zM14 0h1v1h-1zM22 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM9 1h1v1h-1zM11 1h1v1h-1zM14 1h1v1h-1zM16 1h4v1h-4zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM8 2h4v1h-4zM14 2h1v1h-1zM17 2h1v1h-1zM19 2h1v1h-1zM22 2h1v1h-1zM24 2h3v1h-3zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM9 3h2v1h-2zM12 3h1v1h-1zM14 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM22 3h1v1h-1zM24 3h3v1h-3zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM8 4h2v1h-2zM11 4h1v1h-1zM13 4h1v1h-1zM16 4h1v1h-1zM18 4h1v1h-1zM22 4h1v1h-1zM24 4h3v1h-3zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h3v1h-3zM12 5h1v1h-1zM14 5h4v1h-4zM19 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h7v1h-7zM9 7h3v1h-3zM13 7h1v1h-1zM16 7h2v1h-2zM20 7h1v1h-1zM1 8h1v1h-1zM4 8h1v1h-1zM6 8h1v1h-1zM8 8h1v1h-1zM12 8h1v1h-1zM14 8h8v1h-8zM23 8h2v1h-2zM26 8h1v1h-1zM1 9h1v1h-1zM3 9h1v1h-1zM5 9h1v1h-1zM7 9h1v1h-1zM12 9h2v1h-2zM18 9h1v1h-1zM22 9h1v1h-1zM24 9h2v1h-2zM27 9h2v1h-2zM0 10h1v1h-1zM4 10h1v1h-1zM6 10h2v1h-2zM9 10h3v1h-3zM14 10h1v1h-1zM16 10h3v1h-3zM20 10h2v1h-2zM23 10h3v1h-3zM28 10h1v1h-1zM1 11h1v1h-1zM3 11h1v1h-1zM5 11h1v1h-1zM7 11h3v1h-3zM15 11h7v1h-7zM23 11h1v1h-1zM25 11h1v1h-1zM27 11h2v1h-2zM0 12h2v1h-2zM6 12h1v1h-1zM9 12h2v1h-2zM13 12h1v1h-1zM16 12h2v1h-2zM20 12h1v1h-1zM23 12h1v1h-1zM28 12h1v1h-1zM2 13h1v1h-1zM7 13h1v1h-1zM9 13h5v1h-5zM15 13h4v1h-4zM22 13h1v1h-1zM24 13h1v1h-1zM26 13h1v1h-1zM28 13h1v1h-1zM3 14h4v1h-4zM11 14h1v1h-1zM13 14h3v1h-3zM18 14h1v1h-1zM20 14h1v1h-1zM24 14h1v1h-1zM28 14h1v1h-1zM0 15h1v1h-1zM3 15h1v1h-1zM5 15h1v1h-1zM8 15h3v1h-3zM12 15h1v1h-1zM14 15h1v1h-1zM17 15h3v1h-3zM21 15h1v1h-1zM23 15h1v1h-1zM25 15h1v1h-1zM1 16h6v1h-6zM8 16h4v1h-4zM13 16h4v1h-4zM18 16h4v1h-4zM27 16h1v1h-1zM0 17h2v1h-2zM3 17h1v1h-1zM7 17h2v1h-2zM17 17h2v1h-2zM20 17h1v1h-1zM22 17h3v1h-3zM26 17h1v1h-1zM28 17h1v1h-1zM6 18h1v1h-1zM9 18h1v1h-1zM12 18h2v1h-2zM15 18h1v1h-1zM20 18h1v1h-1zM28 18h1v1h-1zM2 19h1v1h-1zM5 19h1v1h-1zM7 19h2v1h-2zM10 19h2v1h-2zM13 19h5v1h-5zM19 19h2v1h-2zM25 19h1v1h-1zM28 19h1v1h-1zM0 20h2v1h-2zM3 20h1v1h-1zM6 20h1v1h-1zM8 20h3v1h-3zM12 20h1v1h-1zM17 20h1v1h-1zM20 20h6v1h-6zM27 20h2v1h-2zM8 21h1v1h-1zM10 21h2v1h-2zM13 21h1v1h-1zM15 21h1v1h-1zM18 21h3v1h-3zM24 21h1v1h-1zM26 21h1v1h-1zM28 21h1v1h-1zM0 22h7v1h-7zM9 22h1v1h-1zM11 22h7v1h-7zM19 22h2v1h-2zM22 22h1v1h-1zM24 22h1v1h-1zM28 22h1v1h-1zM0 23h1v1h-1zM6 23h1v1h-1zM10 23h2v1h-2zM13 23h2v1h-2zM16 23h2v1h-2zM19 23h2v1h-2zM24 23h2v1h-2zM27 23h1v1h-1zM0 24h1v1h-1zM2 24h3v1h-3zM6 24h1v1h-1zM8 24h2v1h-2zM13 24h1v1h-1zM18 24h7v1h-7zM27 24h2v1h-2zM0 25h1v1h-1zM2 25h3v1h-3zM6 25h1v1h-1zM9 25h1v1h-1zM16 25h3v1h-3zM23 25h1v1h-1zM25 25h1v1h-1zM27 25h1v1h-1zM0 26h1v1h-1zM2 26h3v1h-3zM6 26h1v1h-1zM10 26h2v1h-2zM16 26h1v1h-1zM18 26h4v1h-4zM27 26h2v1h-2zM0 27h1v1h-1zM6 27h1v1h-1zM8 27h7v1h-7zM17 27h2v1h-2zM20 27h2v1h-2zM23 27h1v1h-1zM25 27h1v1h-1zM27 27h2v1h-2zM0 28h7v1h-7zM12 28h1v1h-1zM15 28h4v1h-4zM20 28h2v1h-2zM24 28h1v1h-1zM27 28h1v1h-1z"/></svg>
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>
